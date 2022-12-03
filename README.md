@@ -15,3 +15,6 @@ Dalam menu seleksi, pengguna akan disuguhkan tabel data ranking hasil seleksi ya
 Untuk mendapatkan laporan dari data hasil input dan data hasil kelola oleh program, pengguna mengklik tombol menu cetak laporan yang kemudian akan memunculkan tombol lain, yaitu laporan calon pelamar untuk mendapatkan data seluruh calon pelamar yang telah di input, laporan perioritas kriteria untuk mendapatkan data pengaturan bobot kepentingan kriteria, laporan prioritas sub-kriteria untuk mendapatkan data pengaturan bobot sub-kriteria, dan terakhir laporan hasil seleksi untuk mendapatkan data hasil seleksi calon pelamar dengan ranking urutan hasil penilaian calon pelamar tersebut.
     - Tombol Log out
 Tombol log out yang berada pada navigasi menu, pengguna dapat keluar aplikasi, jika pengguna klik tombol log out, program akan kembali ke menu login.
+
+# Author
+- Naufal Sholahuddin
