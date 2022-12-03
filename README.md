@@ -1,4 +1,9 @@
 # SPK_Penerimaan_Karyawan_Paruh_Waktu_Metode_Analytical_Hierarchy_Process_AHP-Skripsi
+DSS (Decision Support System) Sistem Penerimaan Karyawan Paruh Waktu Menggunakan Analytical Hierarchy Process AHP adalah aplikasi sistem pendukung keputusan yang merupakan penelitian berbasis pengetahuan atau turunan dari AI (Artificial Intelligence) dengan perhitungan dan bantuan AHP (Analytical Hierarchy Process) algoritma.
+
+Sistem ini dirancang untuk mengatasi permasalahan yang ada pada Apotek Sanba Jakarta dalam kajian penelitian skripsi. Aplikasi ini berbasis desktop, dan dikembangkan dengan menggunakan bahasa pemrograman Java editor kode IDE Netbeans. database menggunakan phpmyadmin atau MySQL, library yang digunakan adalah JDBC, IReports.
+
+
 
 # Pengunaan Aplikasi
 1. Upload / import SQL file di Folder DATABASE pada PhpMyAdmin atau dll.
@@ -15,6 +20,11 @@ Dalam menu seleksi, pengguna akan disuguhkan tabel data ranking hasil seleksi ya
 Untuk mendapatkan laporan dari data hasil input dan data hasil kelola oleh program, pengguna mengklik tombol menu cetak laporan yang kemudian akan memunculkan tombol lain, yaitu laporan calon pelamar untuk mendapatkan data seluruh calon pelamar yang telah di input, laporan perioritas kriteria untuk mendapatkan data pengaturan bobot kepentingan kriteria, laporan prioritas sub-kriteria untuk mendapatkan data pengaturan bobot sub-kriteria, dan terakhir laporan hasil seleksi untuk mendapatkan data hasil seleksi calon pelamar dengan ranking urutan hasil penilaian calon pelamar tersebut.
     - Tombol Log out
 Tombol log out yang berada pada navigasi menu, pengguna dapat keluar aplikasi, jika pengguna klik tombol log out, program akan kembali ke menu login.
+
+# Spesifikasi Software yang digunankan
+- Netbeans IDE 8.0
+- XAMPP 7.4.28 (Apache, MysQL, PHP & Perl)
+- IReport 5.5.0 (JasperReport Lib Netbeans IDE)
 
 # Author
 - Naufal Sholahuddin
