@@ -1,9 +1,10 @@
 # SPK_Penerimaan_Karyawan_Paruh_Waktu_Metode_Analytical_Hierarchy_Process_AHP-Skripsi
 
 # Pengunaan Aplikasi
-1. Buka aplikasi DSS_PenerimaanKaryawanParuhWaktu yang berformat JAR, pada folder “DSS_PenerimaanKaryawanParuhWaktu/dist/”.
-2. Tampilan menu login akan yang pertama muncul saat menjalankan aplikasi, masukkan akun user dan password yang sesuai. Jika belum memiliki akun, klik register untuk membuat akun baru.
-3. Setelah berhasil masuk pada menu login, tampilan selanjutnya akan menampilkan tampilan menu utama. Dalam menu utama pilih menu yang ingin pengguna jalankan.
+1. Upload / import SQL file di Folder DATABASE pada PhpMyAdmin atau dll.
+2. Buka aplikasi DSS_PenerimaanKaryawanParuhWaktu yang berformat JAR, pada folder “DSS_PenerimaanKaryawanParuhWaktu/dist/”.
+3. Tampilan menu login akan yang pertama muncul saat menjalankan aplikasi, masukkan akun user dan password yang sesuai. Jika belum memiliki akun, klik register untuk membuat akun baru.
+4. Setelah berhasil masuk pada menu login, tampilan selanjutnya akan menampilkan tampilan menu utama. Dalam menu utama pilih menu yang ingin pengguna jalankan.
    - Menu Data Calon Pelamar
 Dalam menu ini pengguna dapat melihat data tabel yang merupakan data dari calon pelamar yang telah disimpan di dalam aplikasi. Pengguna dapat menambahkan data calon pelamar dengan klik tombol tambah data calon pelamar, serta pada tabel tersebut dapat menghapus atau mengedit data yang telah di input.
    - Menu Kriteria
