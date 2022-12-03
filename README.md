@@ -6,28 +6,28 @@ Sistem ini dirancang untuk mengatasi permasalahan yang ada pada Apotek Sanba Jak
 # Screenshot Applikasi
 <details>
   <summary>Login & SignUp</summary>
-  <img src="/../main/Screenshot/1.jpg" name="login">
-  <img src="/../main/Screenshot/2.jpg" name="register">
+  <img src="/../main/Screenshot/1.png" name="login">
+  <img src="/../main/Screenshot/2.png" name="register">
 </details>
 <details>
   <summary>Menu Utama</summary>
-  <img src="/../main/Screenshot/3.jpg" name="menu-utama">
+  <img src="/../main/Screenshot/3.png" name="menu-utama">
 </details>
 <details>
   <summary>Form Input</summary>
-  <img src="/../main/Screenshot/4.jpg" name="calon-pelamar">
-  <img src="/../main/Screenshot/5.jpg" name="tambah-calon-pelamar">
-  <img src="/../main/Screenshot/6.jpg" name="kriteria">
-  <img src="/../main/Screenshot/7.jpg" name="subkriteria">
-  <img src="/../main/Screenshot/8.jpg" name="ranking">
-  <img src="/../main/Screenshot/9.jpg" name="perhitungan-ahp">
+  <img src="/../main/Screenshot/4.png" name="calon-pelamar">
+  <img src="/../main/Screenshot/5.png" name="tambah-calon-pelamar">
+  <img src="/../main/Screenshot/6.png" name="kriteria">
+  <img src="/../main/Screenshot/7.png" name="subkriteria">
+  <img src="/../main/Screenshot/8.png" name="ranking">
+  <img src="/../main/Screenshot/9.png" name="perhitungan-ahp">
 </details>
 <details>
   <summary>Report/Laporan</summary>
-  <img src="/../main/Screenshot/10.jpg" name="report-calon-pelamar">
-  <img src="/../main/Screenshot/11.jpg" name="report-kriteria">
-  <img src="/../main/Screenshot/12.jpg" name="report-subkriteria">
-  <img src="/../main/Screenshot/13.jpg" name="report-hasil-seleksi">
+  <img src="/../main/Screenshot/10.png" name="report-calon-pelamar">
+  <img src="/../main/Screenshot/11.png" name="report-kriteria">
+  <img src="/../main/Screenshot/12.png" name="report-subkriteria">
+  <img src="/../main/Screenshot/13.png" name="report-hasil-seleksi">
 </details>
 
 # Pengunaan Aplikasi
