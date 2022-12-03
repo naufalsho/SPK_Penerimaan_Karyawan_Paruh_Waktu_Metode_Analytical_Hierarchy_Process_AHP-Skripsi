@@ -3,7 +3,32 @@ DSS (Decision Support System) Sistem Penerimaan Karyawan Paruh Waktu Menggunakan
 
 Sistem ini dirancang untuk mengatasi permasalahan yang ada pada Apotek Sanba Jakarta dalam kajian penelitian skripsi. Aplikasi ini berbasis desktop, dan dikembangkan dengan menggunakan bahasa pemrograman Java editor kode IDE Netbeans. database menggunakan phpmyadmin atau MySQL, library yang digunakan adalah JDBC, IReports.
 
-
+# Screenshot Applikasi
+<details>
+  <summary>Login & SignUp</summary>
+  <img src="/../main/Screenshot/1.jpg" name="login">
+  <img src="/../main/Screenshot/2.jpg" name="register">
+</details>
+<details>
+  <summary>Menu Utama</summary>
+  <img src="/../main/Screenshot/3.jpg" name="menu-utama">
+</details>
+<details>
+  <summary>Form Input</summary>
+  <img src="/../main/Screenshot/4.jpg" name="calon-pelamar">
+  <img src="/../main/Screenshot/5.jpg" name="tambah-calon-pelamar">
+  <img src="/../main/Screenshot/6.jpg" name="kriteria">
+  <img src="/../main/Screenshot/7.jpg" name="subkriteria">
+  <img src="/../main/Screenshot/8.jpg" name="ranking">
+  <img src="/../main/Screenshot/9.jpg" name="perhitungan-ahp">
+</details>
+<details>
+  <summary>Report/Laporan</summary>
+  <img src="/../main/Screenshot/10.jpg" name="report-calon-pelamar">
+  <img src="/../main/Screenshot/11.jpg" name="report-kriteria">
+  <img src="/../main/Screenshot/12.jpg" name="report-subkriteria">
+  <img src="/../main/Screenshot/13.jpg" name="report-hasil-seleksi">
+</details>
 
 # Pengunaan Aplikasi
 1. Upload / import SQL file di Folder DATABASE pada PhpMyAdmin atau dll.
