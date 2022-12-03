@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporan hasil seleksi" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a35a0630-0e03-4d5f-8867-47fd086f8695">
+	<property name="ireport.zoom" value="1.1000000000000012"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="91"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Data Seleksi" uuid="40952813-7e0a-429a-96ec-4295ba46ec07">
+		<queryString language="SQL">
+			<![CDATA[SELECT * FROM seleksi ORDER BY hasil_penilaian DESC;]]>
+		</queryString>
+		<field name="no_id" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="nama" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="no_hp" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="hasil_penilaian" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="PATH_IMG" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM seleksi;]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="0" width="401" height="30" uuid="f0f68e88-9493-47b6-bea2-afcf1afc56bd"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Seleksi Penerimaan Karyawan Paruh Waktu]]></text>
+			</staticText>
+			<image onErrorType="Icon">
+				<reportElement key="" x="0" y="0" width="100" height="105" uuid="2c76676b-63bc-493f-8397-a8a78bbc82c3"/>
+				<imageExpression><![CDATA[$P{PATH_IMG}+"Sanba Farma-150x150.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="100" y="30" width="375" height="30" uuid="24420867-119c-4247-bddc-fc9aa94c8b3b"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="20" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Apotek Sanba Farma Jakarta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="75" width="375" height="30" uuid="ca1b2c60-1bab-4032-8065-18763fff9495"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="12" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Jl. BB No.2-1, RT.06/RW.05, Tegal Parang, Mampang Prapatan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12790.]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="0" y="113" width="555" height="1" uuid="3dca53f9-4a8b-488d-a484-2fbddfa8fea9"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="35" uuid="3a8735f4-c1cf-4e2c-900f-c320717556d5"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="18" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Laporan Hasil Seleksi Calon Pelamar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="35" width="46" height="23" uuid="67da95e1-9474-4994-b2ec-9f6c29c9cbf2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+					<paragraph leftIndent="8"/>
+				</textElement>
+				<text><![CDATA[Tabel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="46" y="35" width="54" height="23" uuid="5567da51-81e1-4ac1-87d7-eb50846cbf54"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Ranking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="100" y="35" width="455" height="23" uuid="14641bf1-fc5e-4c7d-b4e3-1f851ffc3146"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="none">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false" pdfFontName="Helvetica"/>
+					<paragraph leftIndent="-2"/>
+				</textElement>
+				<text><![CDATA[Penilaian Calon Pelamar]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="274" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" positionType="Float" x="0" y="0" width="555" height="86" uuid="27c6614c-8905-4e08-8f46-810d5d70c406"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Data Seleksi" uuid="cf01f701-971d-4f5c-8521-e35c938ef9b3">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="55" uuid="288a232a-f24c-4d08-8f2c-103a957ee57b">
+						<jr:tableHeader style="table_TH" height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="55" height="25" backcolor="#CCCCFF" uuid="3ee99e8f-f6fa-4c8b-814d-a56fc930068a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true" isItalic="true"/>
+								</textElement>
+								<text><![CDATA[Ranking]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="55" height="20" uuid="a95bc956-7d5f-4ef2-a57c-12bb126b3317"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman"/>
+									<paragraph leftIndent="4"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="113" uuid="1c35b805-31e7-4b21-9bac-973018cf082b">
+						<jr:tableHeader style="table_TH" height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="113" height="25" backcolor="#CCCCFF" uuid="49836c65-1fc5-4f3e-803f-821c3300eaf2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[No. ID Calon Pelamar]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="113" height="20" uuid="ea1081e6-2122-498a-8c95-d91e8605f85a"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman"/>
+									<paragraph leftIndent="4"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{no_id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="134" uuid="320ac0af-99bc-4ac9-beef-c2913c912a20">
+						<jr:tableHeader style="table_TH" height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="134" height="25" backcolor="#CCCCFF" uuid="73d098fa-0834-43c9-b7ff-52b01d773d48"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Nama Calon Pelamar]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="134" height="20" uuid="da7e2008-cbff-4757-a7f0-ea660e38104d"/>
+								<textElement>
+									<font fontName="Times New Roman"/>
+									<paragraph leftIndent="4"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="139" uuid="d3f58ba8-706a-460c-89b1-225bb2e51cc1">
+						<jr:tableHeader style="table_TH" height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="139" height="25" backcolor="#CCCCFF" uuid="908c5cb6-949a-4326-a1eb-d34fa1e30232"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[No. HP]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="139" height="20" uuid="3154fe36-ecff-46dd-a967-c5fbd314ea81"/>
+								<textElement>
+									<font fontName="Times New Roman"/>
+									<paragraph leftIndent="4"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="111" uuid="ede7b939-da46-444d-b0e3-b2eb64297665">
+						<jr:tableHeader style="table_TH" height="25" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="111" height="25" backcolor="#CCCCFF" uuid="83f45fb7-7d71-4678-9cb7-5f1f34a39f48"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Times New Roman" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Hasil Penilaian]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+						<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+						<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+						<jr:detailCell style="table_TD" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="111" height="20" uuid="6468180a-c898-4506-bac7-a0c7a7f455dd"/>
+								<textElement textAlignment="Center">
+									<font fontName="Times New Roman"/>
+									<paragraph leftIndent="4"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{hasil_penilaian}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement positionType="Float" x="427" y="157" width="128" height="20" uuid="7a83569e-1d27-455b-98c0-5578e37dcdda"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="177" width="165" height="20" uuid="36646086-3158-4000-96bf-e9bb05734b25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Dibuat oleh,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="254" width="165" height="20" uuid="4a8ab4cd-d78f-45ec-b765-d677eedff35e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[(Admin)]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="390" y="254" width="165" height="1" uuid="c3985f27-b569-4ac7-ab40-81febbe1e589"/>
+			</line>
+			<staticText>
+				<reportElement positionType="Float" x="390" y="157" width="37" height="20" uuid="f261e112-ec79-4b02-abe8-f6944dff98d9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="86" width="48" height="15" uuid="5f6b7334-b9f0-4a2d-8922-bbd4da6f41a2"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Catatan : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="23" y="101" width="144" height="15" uuid="b247e44c-10df-4e54-8ed9-93c9fc30a947"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[- Ranking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="64" y="101" width="491" height="15" uuid="1844bf4b-f584-46a3-8cb7-8e0759e3d431"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ditentukan dari hasil penilaian calon pelamar nilai terbesar sampai terkecil.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="64" y="116" width="491" height="15" uuid="36c6a319-9abb-4c26-9033-8c49384d7639"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[tertinggi merupakan calon pelamar potensi terbaik untuk diterima sebagai karyawan baru paruh waktu.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="23" y="116" width="144" height="15" uuid="5ac26a25-715d-4fc6-9c43-5fe17a660121"/>
+				<textElement textAlignment="Left" markup="none">
+					<font fontName="Times New Roman" size="10" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[- Ranking]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="254" width="165" height="20" uuid="ba9cf8d7-5c74-45fa-a35f-60720a84a447"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[(Hasannudin)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="157" width="165" height="20" uuid="02825f11-d0ec-450e-a1ba-578b1c99d817"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="177" width="165" height="20" uuid="c2819f64-6c08-467f-8b30-d8d7977bcfad"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Manager SDM]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="Float" x="10" y="254" width="165" height="1" uuid="3e22d4f6-c411-4705-80af-d22df508c240"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
